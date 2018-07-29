@@ -1,0 +1,1 @@
+declare module 'MY-PACKAGE-NAME';

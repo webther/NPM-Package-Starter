@@ -29,13 +29,15 @@ $ npm install
 
 #### Start to develop your package.
 - In the 'package.json' file, you should update the following configs to your own.
+- You can create a scope package, just update the `name` property like this `@USERNAME/npm-package-starter`.
+  If so, you can then install the package like this `npm install @USERNAME/npm-package-starter`.
 ```
 {
   ...
   "name": "npm-package-starter",
   "version": "1.0.0",
-  "description": "This is a NPM package starter project.",
-  "main": "./src/app.js",
+  "description": "This is a starter project for creating a NPM package.",
+  "main": "src/app.js",
   "author": "Jay Chen",
   "keywords": [],
   "repository": {
@@ -116,7 +118,12 @@ $ npm login
 $ npm publish
 ```
 
-#### You can't unpublish your package after it was published. Instead, you should deprecate it.
+#### You can unpublish your package within 24 hours.
+```
+$ npm unpublish [<@scope>/]<pkg>[@<version>] 
+```
+
+#### You can no longer unpublish your package after 24 hours. Instead, you can deprecate it.
 ```
 $ npm deprecate
 ``` 

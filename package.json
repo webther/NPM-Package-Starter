@@ -2,8 +2,8 @@
   "name": "npm-package-starter",
   "version": "1.0.0",
   "description": "This is a starter project for creating a NPM package.",
-  "main": "./src/app.js",
-  "typings": "./src/app",
+  "main": "./dist/app.bundle.min.js",
+  "typings": "./dist/app",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",

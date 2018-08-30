@@ -62,6 +62,10 @@ module.exports = (env, argv) => {
         {
           from: ROOT + '/index.html',
           to: DESTINATION
+        },
+        {
+          from: ROOT + '/src/app.d.ts',
+          to: DESTINATION
         }
       ]),
       new MiniCssExtractPlugin({

@@ -19,7 +19,11 @@ module.exports = (env, argv) => {
     output: {
       path: DESTINATION,
       publicPath: '/dist/',
-      filename: 'app.bundle.min.js'
+      filename: 'app.bundle.min.js',
+      library: 'LibraryName',
+      libraryTarget: 'umd',
+      umdNamedDefine: true,
+      globalObject: 'typeof self !== \'undefined\' ? self : this'
     },
     module: {
       rules: [
